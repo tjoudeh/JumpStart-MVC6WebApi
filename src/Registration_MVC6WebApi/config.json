@@ -1,0 +1,8 @@
+﻿{
+    "Data": {
+        "DefaultConnection": {
+            "Connectionstring": "Data Source=.\\sqlexpress;Initial Catalog=RegistrationDB;Integrated Security=True;"
+        }
+    }
+
+}
