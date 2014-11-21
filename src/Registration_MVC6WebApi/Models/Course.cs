@@ -11,4 +11,10 @@ namespace Registration_MVC6WebApi.Models
         public string Name { get; set; }
         public int Credits { get; set; }
     }
+
+    public class CourseStatusModel
+    {
+        public int Id { get; set; }
+        public string Description { get; set; }
+    }
 }

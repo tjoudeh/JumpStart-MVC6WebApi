@@ -40,7 +40,7 @@ namespace Registration_MVC6WebApi.Controllers
             if (!ModelState.IsValid)
             {
                 Context.Response.StatusCode = 400;
-                return new ObjectResult("Course model is invalid");
+                return new ObjectResult(new CourseStatusModel { Id = 1 , Description= "Course model is invalid" });
             }
             else
             {
@@ -57,7 +57,7 @@ namespace Registration_MVC6WebApi.Controllers
                 else
                 {
                     Context.Response.StatusCode = 400;
-                    return new ObjectResult("Failed to save course");
+                    return new ObjectResult(new CourseStatusModel { Id = 2, Description = "Failed to save course" });
                 }
                
             }
@@ -76,5 +76,7 @@ namespace Registration_MVC6WebApi.Controllers
                 return HttpNotFound();
             }
         }
+
     }
+
 }
