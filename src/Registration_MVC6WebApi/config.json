@@ -1,7 +1,7 @@
 ﻿{
     "Data": {
         "DefaultConnection": {
-            "Connectionstring": "Data Source=.\\sqlexpress;Initial Catalog=RegistrationDB;Integrated Security=True;"
+            "Connectionstring": "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=RegistrationDB;Integrated Security=True;"
         }
     }
 
