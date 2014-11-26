@@ -26,8 +26,8 @@ namespace Registration_MVC6WebApi
             services.AddMvc();
 
             //Resolve dependency injection
-            services.AddSingleton<IRegistrationRepo, RegistrationRepo>();
-            services.AddSingleton<RegistrationDbContext, RegistrationDbContext>();
+            services.AddScoped<IRegistrationRepo, RegistrationRepo>();
+            services.AddScoped<RegistrationDbContext, RegistrationDbContext>();
         }
         public void Configure(IApplicationBuilder app)
         {
